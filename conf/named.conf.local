@@ -1,0 +1,4 @@
+zone "acidonpe.com" {
+    type master;
+    file "/etc/bind/zones/db.acidonpe.com";
+};

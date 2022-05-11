@@ -1,0 +1,12 @@
+apiVersion: operator.openshift.io/v1
+kind: DNS
+metadata:
+  name: default
+spec:
+  servers:
+  - name: acidonpe 
+    zones: 
+      - acidonpe.com
+    forwardPlugin:
+      upstreams: 
+        - 172.30.148.44:5353
